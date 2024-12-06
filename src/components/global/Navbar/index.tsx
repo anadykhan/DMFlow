@@ -63,7 +63,6 @@ const Navbar = ({ slug }: Props) => {
           <Notifications></Notifications>
         </div>
         <MainBreadCrumb slug={slug} page={page === slug ? "Home" : page}
-
         ></MainBreadCrumb>
       </div>
     )
