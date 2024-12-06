@@ -5,7 +5,7 @@ type Props = {
 
 const SubscriptionPlan = ({children, type}: Props) => {
   return (
-    <div>
+    <div className="h-full">
         {children}
     </div>
   )

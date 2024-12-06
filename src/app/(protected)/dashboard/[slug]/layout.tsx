@@ -1,3 +1,4 @@
+import Navbar from "@/components/global/Navbar";
 import Sidebar from "@/components/global/Sidebar";
 
 type Props = {
@@ -11,6 +12,9 @@ const Layout = ({ children, params }: Props) => {
       <Sidebar slug={params.slug}></Sidebar>
       
       {/*Navbar*/}
+      <div className="lg:ml-[250px] lg:pl-10 lg:py-5 flex flex-col overflow-auto">
+        <Navbar slug={params.slug}></Navbar>
+      </div>
     </div>
   );
 };
