@@ -20,7 +20,7 @@ const Page = (props: Props) => {
           </div>
           <div>
             {[1, 2, 3].map((data, index) => (
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between" key={index}>
                 <div>
                   <h3 className="font-medium">
                     Direct traffic towards website

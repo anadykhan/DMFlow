@@ -1,9 +1,12 @@
 import { ChevronRight, PencilIcon } from "lucide-react";
 import ActivateAutomationButton from "../activate-automation-button";
 
-type Props = {};
-const AutomationBreadCrumb = (props: Props) => {
+type Props = {
+  id: string;
+};
+const AutomationBreadCrumb = ({ id }: Props) => {
   //WIP: Get some automation data
+  //   WIP: User mutation stuff to update the automation
   return (
     <div className="rounded-full w-full p-5 bg-[#18181b1a] flex justify-between items-center">
       <div className="flex items-center gap-x-3 min-w-0">
@@ -29,7 +32,7 @@ const AutomationBreadCrumb = (props: Props) => {
           </p>
         </div>
       </div>
-      <ActivateAutomationButton/>
+      <ActivateAutomationButton />
     </div>
   );
 };
